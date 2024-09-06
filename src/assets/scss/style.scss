@@ -1,0 +1,35 @@
+$black: #000;
+$white: #fff;
+
+body {
+  background: $black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  // transform: scale(2);
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 20px;
+  background: url('@image/IMG_0588.jpg') no-repeat center;
+
+  .line-clamp {
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    user-select: none;
+  }
+
+  .image-wrap {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
